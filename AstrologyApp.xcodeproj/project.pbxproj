@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C36E6192591F0A300DA6250 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C36E6182591F0A300DA6250 /* BaseView.swift */; };
 		7C890F252588AFC700F7D35F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C890F242588AFC700F7D35F /* Util.swift */; };
 		7C890F2D2588AFD700F7D35F /* ViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C890F2C2588AFD700F7D35F /* ViewUtil.swift */; };
 		7C890F322588FF0300F7D35F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C890F312588FF0300F7D35F /* Logger.swift */; };
@@ -20,6 +21,7 @@
 		7CB03F3B2582114100970C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB03F392582114100970C9F /* LaunchScreen.storyboard */; };
 		7CB03F462582114100970C9F /* AstrologyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB03F452582114100970C9F /* AstrologyAppTests.swift */; };
 		7CB03F512582114100970C9F /* AstrologyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB03F502582114100970C9F /* AstrologyAppUITests.swift */; };
+		7CB5FB1B25923EDF00E2451F /* DataSaveUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5FB1A25923EDF00E2451F /* DataSaveUtil.swift */; };
 		7CD13E8D258227E000A95348 /* PublicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD13E8C258227E000A95348 /* PublicView.xib */; };
 		7CD13E92258228E000A95348 /* PublicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD13E91258228E000A95348 /* PublicView.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C36E6182591F0A300DA6250 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		7C890F242588AFC700F7D35F /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		7C890F2C2588AFD700F7D35F /* ViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtil.swift; sourceTree = "<group>"; };
 		7C890F312588FF0300F7D35F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		7CB03F4C2582114100970C9F /* AstrologyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstrologyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB03F502582114100970C9F /* AstrologyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyAppUITests.swift; sourceTree = "<group>"; };
 		7CB03F522582114100970C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CB5FB1A25923EDF00E2451F /* DataSaveUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSaveUtil.swift; sourceTree = "<group>"; };
 		7CD13E8C258227E000A95348 /* PublicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PublicView.xib; sourceTree = "<group>"; };
 		7CD13E91258228E000A95348 /* PublicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +108,9 @@
 				7C890F242588AFC700F7D35F /* Util.swift */,
 				7C890F2C2588AFD700F7D35F /* ViewUtil.swift */,
 				7C890F422589127100F7D35F /* Const.swift */,
+				7CB5FB1A25923EDF00E2451F /* DataSaveUtil.swift */,
 				7C890F312588FF0300F7D35F /* Logger.swift */,
+				7C36E6182591F0A300DA6250 /* BaseView.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -339,10 +345,12 @@
 			files = (
 				7CB03F332582114000970C9F /* ViewController.swift in Sources */,
 				7C890F2D2588AFD700F7D35F /* ViewUtil.swift in Sources */,
+				7CB5FB1B25923EDF00E2451F /* DataSaveUtil.swift in Sources */,
 				7C890F252588AFC700F7D35F /* Util.swift in Sources */,
 				7C890F322588FF0300F7D35F /* Logger.swift in Sources */,
 				7C890F4E2589222B00F7D35F /* TopViewController.swift in Sources */,
 				7C890F432589127100F7D35F /* Const.swift in Sources */,
+				7C36E6192591F0A300DA6250 /* BaseView.swift in Sources */,
 				7CD13E92258228E000A95348 /* PublicView.swift in Sources */,
 				7CB03F2F2582114000970C9F /* AppDelegate.swift in Sources */,
 			);
@@ -523,6 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXZPH4L5QF;
 				INFOPLIST_FILE = AstrologyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,6 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXZPH4L5QF;
 				INFOPLIST_FILE = AstrologyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

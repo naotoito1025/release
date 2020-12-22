@@ -10,8 +10,29 @@ import UIKit
 /// Utilクラス
 class Util {
     
-    class func getWidth() {
-        
+    /// ステータスバーの高さ取得
+    class func getStatusBarHeight() -> CGFloat {
+        Logger.call()
+        var statusBarHeight: CGFloat = 0
+            if #available(iOS 13.0, *) {
+                let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+                statusBarHeight = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+            } else {
+                statusBarHeight = UIApplication.shared.statusBarFrame.height
+            }
+            return statusBarHeight
+    }
+    
+    /// ナビゲーションバーの高さ取得
+    class func getNavigationBarHeight(vc: UIViewController) -> CGFloat {
+        Logger.call()
+        return vc.navigationController?.navigationBar.frame.size.height ?? 0
+    }
+    
+    /// ヘッダーの高さ取得
+    class func getHeaderHeight(vc: UIViewController) -> CGFloat {
+        Logger.call()
+        return getStatusBarHeight() + getNavigationBarHeight(vc: vc)
     }
     
     /// RGBカラーの変換
